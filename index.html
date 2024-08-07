@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personalized Diet Recommendation</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Personalized Diet Recommendation using AI</h1>
+        <form id="dietForm">
+          <label>
+            <span>Gender:</span>
+            <select id="gender" required>
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </label>
+          <label>
+            <span>Age:</span>
+            <input type="number" id="age" required />
+          </label>
+          <label>
+            <span>Height (in cm):</span>
+            <input type="text" id="height" required />
+          </label>
+          <label>
+            <span>Weight (in kg):</span>
+            <input type="text" id="weight" required />
+          </label>
+          <label>
+            <span>BMI:</span>
+            <input type="text" id="bmi" required />
+          </label>
+          <label>
+            <span>Dietary restrictions or preferences:</span>
+            <textarea id="dietRestrictions"></textarea>
+          </label>
+          <label>
+            <span>Known food allergies or intolerances:</span>
+            <textarea id="foodAllergies"></textarea>
+          </label>
+          <label>
+            <span>Fitness goals and level of physical activity:</span>
+            <textarea id="fitnessGoals"></textarea>
+          </label>
+          <label>
+            <span>Cuisine preferences:</span>
+            <textarea id="cuisinePreferences"></textarea>
+          </label>
+          <label>
+            <span>Existing medical conditions:</span>
+            <textarea id="medicalConditions"></textarea>
+          </label>
+          <label>
+            <span
+              >Additional information or specific dietary requirements:</span
+            >
+            <textarea id="additionalInfo"></textarea>
+          </label>
+          <button type="submit">Get Diet Recommendation</button>
+        </form>
+        <div id="output"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
